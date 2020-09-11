@@ -3,7 +3,6 @@ import numpy as np
 
 pygame.init()
 
-
 # Screen
 display_width = 600
 display_height = 400
@@ -29,6 +28,8 @@ while not crashed:
 
     # Update objects
     pong.center += pong.velocity
+
+
     # Game screen update
     gameDisplay.fill((0,200,0))
 

@@ -15,10 +15,8 @@ class Bat:
             self.center = np.array([x,y])
 
     def draw(self, gameDisplay):
-        temp = self.get_rect()
-        
-        pygame.draw.rect(gameDisplay,self.bat_color,(temp))
+        pygame.draw.rect(gameDisplay,self.bat_color,self.__get_rect())
 
-    def get_rect(self):
+    def __get_rect(self):
         x,y = self.center
         return (int(x - self.width), int(y - self.height), self.width, self.height)
